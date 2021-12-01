@@ -1,18 +1,182 @@
-#include <iostream>
-using namespace std;
 
-int maxim(int a, int b, int c = 0)
-{
-    return a > b && a > c ? a : (b > c ? b : c);
-    // return a * b * c;
-}
 
-int main()
-{
-    cout << maxim(10, 11) << '\n';
-    cout << maxim(10, 11, 12) << '\n';
-    return 0;
-}
+//////////////////////////////-----------------------///////////////////////////////
+
+// #include <iostream>
+// using namespace std;
+
+// int g = 10;
+
+// int main()
+// {
+//     cout << g << '\n';
+//     int g = 5;
+//     {
+//         int g = 1;
+//         cout << g++ << '\n';    // cpp has block level scope >> removed when the function end
+//         cout << g << '\n';      // incase of same name used for different variables variable will act according to nearest scope
+//     }
+//     cout << g << '\n';
+//     cout << ::g << '\n'; :: for global
+//     return 0;
+// }
+
+///////////////////////////-------------------------------///////////////////////////
+
+// #include <iostream>
+// using namespace std;
+
+// int global = 10;
+
+// void function()
+// {
+//     int stack2 = 20;
+//     global += stack2;
+//     cout << stack2 << " " << global << '\n';
+// }
+
+// int main()
+// {
+//     int stack = 5;
+//     function();
+//     global++;
+//     cout << global << "\n";
+//     return 0;
+// }
+
+/////////////////////////////--------------------------/////////////////////////////
+
+// #include <iostream>
+// using namespace std;
+
+// int &fun(int &a)
+// {
+
+//     cout << a << '\n';
+//     a = 15;
+//     cout << a << '\n';
+//     return a;
+// }
+// // cout << a << '\n';
+
+// int main()
+// {
+//     int x = 10;
+//     fun(x) = 25;
+//     cout << x;
+// }
+
+/////////////////////////////------------------------------////////////////////////
+
+// #include <iostream>
+// using namespace std;
+
+// int *fun()
+// {
+//     int *p = new int[5];
+//     for (int i = 0; i < 5; i++)
+//     {
+//         p[i] = 10 + i;
+//     }
+//     cout << *p << '\n';
+//     cout << p << '\n';
+//     return p;
+// }
+
+// int main()
+// {
+//     int *q = fun();
+//     cout << *q << '\n';
+//     cout << q << '\n';
+//     for (int i = 0; i < 5; i++)
+//     {
+//         cout << q[i] << " ";
+//     }
+
+//     cout << '\n';
+//     return 0;
+// }
+
+///////////////////////////--------------------------//////////////////////
+
+// #include <iostream>
+// using namespace std;
+
+// void swap(int &a, int &b)
+// {
+//     int temp = a;
+//     a = b;
+//     b = temp;
+//     cout << a << " " << b << '\n';
+// }
+
+// int main()
+// {
+//     int x = 6, y = 10;
+//     swap(x, y);
+//     cout << x << " " << y << "\n";
+//     return 0;
+// }
+
+/////////////////////////--------------------/////////////////////
+
+// #include <iostream>
+// using namespace std;
+
+// void swap(int *a, int *b)
+// {
+//     int temp = *a;
+//     *a = *b;
+//     *b = temp;
+//     cout << *a << " " << *b << '\n';
+// }
+
+// int main()
+// {
+//     int x = 6, y = 10;
+//     swap(&x, &y);
+//     cout << x << " " << y << "\n";
+//     return 0;
+// }
+
+///////////////////////////////------------------------///////////////////////////
+
+// #include <iostream>
+// using namespace std;
+
+// void swap(int a, int b)
+// {
+//     int temp;
+//     temp = a;
+//     a = b;
+//     b = temp;
+// }
+
+// int main()
+// {
+//     int x = 6, y = 7;
+//     swap(x, y);
+//     cout << x << " " << y << '\n';
+//     return 0;
+// }
+
+//////////////////-----------------------------/////////////////////
+
+// #include <iostream>
+// using namespace std;
+
+// int maxim(int a, int b, int c = 0)
+// {
+//     return a > b && a > c ? a : (b > c ? b : c);
+//     // return a * b * c;
+// }
+
+// int main()
+// {
+//     cout << maxim(10, 11) << '\n';
+//     cout << maxim(10, 11, 12) << '\n';
+//     return 0;
+// }
 
 ///////////////////////----------------------------////////////////////
 
