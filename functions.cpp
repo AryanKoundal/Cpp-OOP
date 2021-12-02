@@ -1,22 +1,24 @@
-// #include <iostream>
-// using namespace std;
+#include <iostream>
+using namespace std;
 
-// int max( int a, int b){
-//     return a>b ? a : b;
-// }
-// int min(int a, int b)
-// {
-//     return b>a ? a : b;
-// }
+int max(int a, int b)
+{
+    return a > b ? a : b;
+}
+int min(int a, int b)
+{
+    return b > a ? a : b;
+}
 
-// int main(){
-//     int *(fp)(int, int);
-//     fp = max;
-//     cout << fp(5,9);
-//     fp = min;
-//     cout << *(fp)(5,9);
-//     return 0;
-// }
+int main()
+{
+    int (*fp)(int, int);
+    fp = max;
+    cout << fp(5, 9);
+    fp = min;
+    cout << (*fp)(5, 9);
+    return 0;
+}
 
 ////////////////////////////----------------------///////////////////////////
 
