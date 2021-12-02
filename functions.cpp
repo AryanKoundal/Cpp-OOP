@@ -1,4 +1,120 @@
+// #include <iostream>
+// using namespace std;
 
+// int max( int a, int b){
+//     return a>b ? a : b;
+// }
+// int min(int a, int b)
+// {
+//     return b>a ? a : b;
+// }
+
+// int main(){
+//     int *(fp)(int, int);
+//     fp = max;
+//     cout << fp(5,9);
+//     fp = min;
+//     cout << *(fp)(5,9);
+//     return 0;
+// }
+
+////////////////////////////----------------------///////////////////////////
+
+// #include <iostream>
+// using namespace std;
+// int Search(int A[], int n, int key)
+// {
+//     for (int i = 0; i < n; i++)
+//     {
+//         if (key == A[i])
+//         {
+//             return i;
+//         }
+//         else
+//         {
+//             return 0;
+//         }
+//     }
+// }
+// int main()
+// {
+//     int A[] = {2, 4, 5, 7, 10, 9, 13};
+//     int k;
+//     cout << "Enter an Element to be Searched:";
+//     cin >> k;
+//     int index = Search(A, 7, k);
+
+//     cout << "Element found at index :" << index << endl;
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// int search(int ar[], int n, int key)
+// {
+//     for (int i = 0; i < n; i++)
+//     {
+//         if (ar[i] == key)
+//         {
+//             // cout << i << '\n';
+//             return i;
+//         }
+//         else
+//         {
+//             return 0;
+//         }
+//     }
+// }
+
+// int main()
+// {
+//     int ar[] = {1, 2, 3, 4, 5};
+//     int key;
+//     cin >> key;
+//     int index = search(ar, 5, key);
+//     cout << index << '\n';
+//     return 0;
+// }
+
+//////////////////////////////-----------------------------------------////////////////////////////
+
+// #include <iostream>
+// using namespace std;
+
+// void fun(int n)
+// {
+//     if (n > 0)
+//     {
+//         fun(n - 1);
+//         cout << n << '\n'; // in this case cout will be called because upar fun called ho rha tha and then gettinh recalled, butvout wali line ki barri ni aai for each time it went inside if, so uski wajah se cout will be called
+//         // cout << n << '\n';
+//         // fun(n - 1);
+//     }
+// }
+
+// int main()
+// {
+//     int n = 5;
+//     fun(n);
+//     return 0;
+// }
+
+//////////////////////////---------------------//////////////////////////////
+
+// #include <iostream>
+// using namespace std;
+
+// void fun()
+// {
+//     static int s = 10;
+//     s++;
+//     cout << s << endl;
+// }
+// int main()
+// {
+//     fun();
+//     fun();
+// }
 
 //////////////////////////////-----------------------///////////////////////////////
 
