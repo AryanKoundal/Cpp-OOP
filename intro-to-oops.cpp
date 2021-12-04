@@ -34,6 +34,9 @@ int main()
     rectangle r;
     r.setLength(10);
     int b = 20;
+    r.setBreadth(b);
+    cout << r.area() << '\n';
+    return 0;
 }
 
 /////////////////////////----------------------/////////////////////////////
