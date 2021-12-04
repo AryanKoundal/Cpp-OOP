@@ -3,9 +3,10 @@ using namespace std;
 
 class rectangle
 {
-public:
+private:
     int length, breadth;
 
+public:
     int area()
     {
         return length * breadth;
@@ -14,17 +15,56 @@ public:
     {
         return 2 * (length + breadth);
     }
+    void setLength(int l)
+    {
+        length = l;
+    }
+    void setBreadth(int b)
+    {
+        breadth = b;
+    }
+    int getLength()
+    {
+        return length;
+    }
 };
 
 int main()
 {
     rectangle r;
-    rectangle *p = new rectangle();
-    p->length = 15;
-    p->breadth = 10;
-    cout << p->area() << '\n';
-    return 0;
+    r.setLength(10);
+    int b = 20;
 }
+
+/////////////////////////----------------------/////////////////////////////
+
+// #include <iostream>
+// using namespace std;
+
+// class rectangle
+// {
+// public:
+//     int length, breadth;
+
+//     int area()
+//     {
+//         return length * breadth;
+//     }
+//     int perimeter()
+//     {
+//         return 2 * (length + breadth);
+//     }
+// };
+
+// int main()
+// {
+//     rectangle r;
+//     rectangle *p = new rectangle();
+//     p->length = 15;
+//     p->breadth = 10;
+//     cout << p->area() << '\n';
+//     return 0;
+// }
 
 ////////////////////////////--------------------------////////////////////////
 
