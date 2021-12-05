@@ -1,43 +1,74 @@
 #include <iostream>
 using namespace std;
 
+/*program for creating default constructors
+
+*/
 class rectangle
 {
 private:
-    int length, breadth;
+    int length;
+    int breadth;
 
 public:
+    rectangle()
+    {
+        length = 1;
+        breadth = 1;
+    }
     int area()
     {
         return length * breadth;
     }
-    int perimeter()
-    {
-        return 2 * (length + breadth);
-    }
-    void setLength(int l)
-    {
-        length = l;
-    }
-    void setBreadth(int b)
-    {
-        breadth = b;
-    }
-    int getLength()
-    {
-        return length;
-    }
 };
-
 int main()
 {
-    rectangle r;
-    r.setLength(10);
-    int b = 20;
-    r.setBreadth(b);
-    cout << r.area() << '\n';
-    return 0;
+    rectangle r1;
+    cout << r1.area() << endl;
 }
+
+//////////////////////////------------------------//////////////////////////
+
+// #include <iostream>
+// using namespace std;
+
+// class rectangle
+// {
+// private:
+//     int length, breadth;
+
+// public:
+//     int area()
+//     {
+//         return length * breadth;
+//     }
+//     int perimeter()
+//     {
+//         return 2 * (length + breadth);
+//     }
+//     void setLength(int l)
+//     {
+//         length = l;
+//     }
+//     void setBreadth(int b)
+//     {
+//         breadth = b;
+//     }
+//     int getLength()
+//     {
+//         return length;
+//     }
+// };
+
+// int main()
+// {
+//     rectangle r;
+//     r.setLength(10);
+//     int b = 20;
+//     r.setBreadth(b);
+//     cout << r.area() << '\n';
+//     return 0;
+// }
 
 /////////////////////////----------------------/////////////////////////////
 
