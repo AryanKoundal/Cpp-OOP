@@ -1,0 +1,20 @@
+// Commonly used String functions
+
+1. cin.get() is used for accessing character array. It includes white space characters. Generally, cin with an extraction operator (>>) terminates when whitespace is found. However, cin.get() reads a string with the whitespace.
+Syntax:
+  cin.get(string_name, size);
+
+
+2. getline() reads till enter is encountered even if no characters are read.So even if there is nothing in the third line, getline() considers it as a single line.Further observe the problem in the second line.Syntax :
+
+    istream &getline(istream &is, string &str);
+is : It is an object of istream class and tells the function about the stream from where to read the input from.str : It is a string object, the input is stored in this object after being read from the stream.
+
+
+3. strcat - 
+
+4. strncat -
+
+5. strcpy -
+
+6. strncpy - 

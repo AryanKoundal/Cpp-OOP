@@ -1,0 +1,75 @@
+Algorithms - there are building algorithms or functions that are meant for managing these container. performing operations on the containers. Ex- Search, sort, concat, copy etc
+
+Containers - arrays, linked lists, stacks etc are containers, these contains collection of data
+
+Interators - for accessing the iterators.
+
+Container classes - template classes( generic/ work on any type of data) - 
+    a. Vector - self managed array
+        func - push_back(), pop_back(), insert(), remove()
+        vector capacity is 2 times the size of vector array
+    b. List - for doubly linked lists
+        func - push_front(), pop_front(), push_back(), pop_back(), insert(), remove() etc
+    c. forward_list - for singly lnked list
+        func - same as list
+    d. deque - like an array , double ended queue
+        func - same as list 
+        Double-ended queues are a special case of queues where insertion and deletion operations are possible at both the ends.
+        They are similar to vectors, but are more efficient in case of insertion and deletion of elements. Unlike vectors, contiguous storage allocation may not be guaranteed.
+    e. priority_queue - for heap( max heap)
+        func - push() , pop(), empty(), size()
+        the first element of the queue is the greatest of all elements in the queue
+        not an array
+    f. stack - like an array
+        func - work on the top element only
+        LIFO(Last In First Out) type of working, where a new element is added at one end (top) and an element is removed from that end only.
+    g. set - 
+        contains only unique elements
+        order not maintained
+    h. mutliset - 
+        allows duplicates
+    i. map - 
+        for <key,value> pair - uses hash table
+    j. multimap - 
+        for <key,value> pair - keys can be duplicate - key, value pairs still unique
+    k. queue - 
+	    A queue data structure allows insertion only at the end and deletion from the front.
+        for confusion in front and back, imagine a line, front is the start from where the line starts, and back is the end.
+    l. pair - 
+        Pair is used to combine together two values that may be different in type.4
+        The array of objects allocated in a map or hash_map is of type ‘pair’ by default in which all the ‘first’ elements are unique keys associated with their ‘second’ value objects.
+        To access the elements, we use variable name followed by dot operator followed by the keyword first or second.
+        stack of pairs - 
+            for this, you have to target one stack layer then then correspoding to that layer go inside to acess the pair values
+    m. tuple - 
+        A tuple is an object that can hold a number of elements. The elements can be of different data types.   
+
+    All these containers/classes has many functions but the mostly used ones are : 
+
+Iterators- 
+    can't iterate on stack, queue, priority_queue
+    The most obvious form of an iterator is a pointer. A pointer can point to elements in an array and can iterate through them using the increment operator (++). But, all iterators do not have similar functionality as that of pointers.
+
+auto keyword: The auto keyword specifies that the type of the variable that is being declared will be automatically deducted from its initializer
+    he variable declared with auto keyword should be initialized at the time of its declaration only or else there will be a compile-time error. 
+    Good use of auto is to avoid long initializations when creating iterators for containers.
+
+deque<int>::iterator itr; instead of this auto keyword can  be used.
+
+
+
+1. QUEUE - 
+
+2. DEQUEUE - 
+
+3. STACK - 
+
+4. STRUCTURES - 
+
+Structure in C has some limitations, such as the inability to hide data, the inability to treat 'struct' data as built-in types, and the lack of inheritance support. The C++ structure overcame these drawbacks.
+
+The extended version of the structure in C++ is called a class. The programmer makes it easy to use the class to hold both the data and functions, whereas the structure only holds data.
+
+5. CLASS - 
+
+Dereferencing operator - Variables hold values. A pointer variable holds the address (the location) of another variable. Dereferencing is getting at the pointed value.
